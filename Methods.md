@@ -7,4 +7,3 @@ Due to having a very limited number of images, we had to divide porosity into ca
 
 Image augmentation is pretty important in image processing. As we deal with pixels values and shapes, we focused on image flipping and sizing augmentation rather than color augmentation since we deal with grayscale images and pixels values.
 
-sgsfgsfgsd 
