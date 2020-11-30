@@ -8,4 +8,4 @@ Collecting images with porosity detected by MIP is the first step to provide a u
 
 In this project, due to the limited information in the data sets, porosity-related images were only collected and the project was conducted just to predict the porosity for images from a testing dataset. The training set has 200 images with their corresponding porosity values, and the testing set has only 100 images.
 
-this sentence is a trial, commit it
+
