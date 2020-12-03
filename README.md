@@ -1,17 +1,12 @@
 # CEE 498 Project: Pore in Concrete
 
-                            By:
+By:
 
-                        Faisal Qadri
+Faisal Qadri
 
-                        Hossain Kabir
+Hossain Kabir
 
-                        xxxxxxxxxxxxxxx
-
-        University of Illinois at Urbana-Champaign
-
-                            Fall 2020
-
+xxxxxxxxxxxxxxx
 
 [Introduction](Introduction.md)
 
