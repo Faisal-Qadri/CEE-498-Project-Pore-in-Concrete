@@ -1,6 +1,6 @@
 # CEE 498 Project: Pore in Concrete
 
-By:
+Report prepared by:
 
 Faisal Qadri
 
@@ -8,8 +8,8 @@ Hossain Kabir
 
 xxxxxxxxxxxxxxx
 
-[Introduction](Introduction.md)
+## [Introduction](Introduction.md)
 
-[Methods](Mrthods.md)
+## [Methods](Mrthods.md)
 
-[Results](Results.md)
+## [Results](Results.md)
