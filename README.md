@@ -10,7 +10,7 @@ Tianshu Xiao, MS student
 
 ## [Introduction](Introduction.md)
 
-## [Methods](Mrthods.md)
+## [Methods](Methods.md)
 
 ## [Results](Results.md)
 ## [Discussion](Discussion.md)
