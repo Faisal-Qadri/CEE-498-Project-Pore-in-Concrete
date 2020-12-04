@@ -8,7 +8,7 @@ Doing exploratory data analysis (EDA) is a required task for characterizing poro
 <img src ="images/fig1.JPG" width =500>
 
 
-As shown in Table 1, porosities are variable from 0 to 100 percent. In addition, the image IDs column are used to match images with their labels, i.e. porosity. It is worth noting that each Batch 1 and 2 has 100 images, which will be for porosity characterization. The first three images chosen from batch1 are shown in Fig 1:
+As shown in Table 1, porosities are variable from 0 to 100 percent. In addition, the image IDs column are used to match images with their labels, i.e. porosity. It is worth noting that each Batch 1 and 2 has 100 images, which will be for porosity characterization. Image processing plays an integral role for understanding the general characterestics of capillary pore system. The first three images chosen from batch1 are shown in Fig 1:
 
                
 <img src ="images/fig2.JPG" width =700>
@@ -21,7 +21,7 @@ However, there are two problems associate with the Viridis color system used for
 
                   Figure 2: comparison of Viridis vs. Greyscale color systems for reading images in python 
 
-As previously mentioned, the color system of images had to be converted to Greyscale to faciliate chemical analysis of hydartes. In Fig 3, it is shown that pixels having darker luminance belongs to pores, intermediate thresholds belong to hydrated products, and high thresholds corresponds to unkown phases, i.e. anhydrous and aluminate phases. 
+As previously mentioned, the color system of images had to be converted to Greyscale to faciliate chemical analysis of hydartes. In Fig 3, it is shown that pixels having darker luminance belong to pores, intermediate thresholds belong to hydrated products, and high thresholds corresponds to unkown phases, i.e. anhydrous and aluminate phases. 
 
 <img src ="images/fig4.png" width =500>
 
@@ -29,10 +29,16 @@ As previously mentioned, the color system of images had to be converted to Greys
         
 Fig 4 shows a converted version of Fig 1 transformed from Viridis to Greyscale and would be used for further analysis 
 
-<img src ="images/fig5.JPG" width =700>        
+<img src ="images/fig5.JPG" width =700>   
 
-The input grayscale images are all having 256*196 pixels with grayscale values ranging from 0 to 255; dark pixels are having threshold values close to zero , and pixels with higher thershold values are brighter and represents cement hydrated products in gray and white colors. Image processing plays an integral role for understanding the general characterestics of capillary pore system. 
+          Figure 4: transformation of input images from Viridis to Greyscale 
 
+The input grayscale images are all having 256*196 pixels with grayscale values ranging from 0 to 255; dark pixels are having threshold values close to zero , and pixels with higher thershold values are brighter and represents cement hydrated products in gray and white colors. To quantify pore volume fraction, different thresholds correspond to pores are chosen to determine the impact of threshold limit on the averge porosity (see Fig 5). Fig 5 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), which avoids overestimation of porosity in both batches. 
+
+
+<img src ="images/fig6.JPG" width =700>  
+
+    Figure 5: quantification of average porosity vs. threshold limits
 
 
 Complex model has been built using Convolutional Neural Network (CNN) approach. Having the images from the training set coincided with their labels (porosity values) as the input of the model. This model will be freezed while fetching and processing a previous model performed on a very big data (images). The usual image data set “imagenet” is used as a preprocessed model to let the model train in a complex way to understand and identify images.
