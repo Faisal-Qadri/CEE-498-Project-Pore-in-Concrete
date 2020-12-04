@@ -8,11 +8,17 @@ Doing exploratory data analysis (EDA) is a required task for characterizing poro
 <img src ="images/fig1.JPG" width =500>
 
 
-As shown in Table 1, porsoties are variable from 0 to 100 percent. In addition, the image IDs column are used to match images with their labels, i.e. porosity. It is worth noting that each Batch 1 and 2 has 100 images, which will be for porosity characterization. The first three images chosen from batch1 are shown in Fig 1:
+As shown in Table 1, porosities are variable from 0 to 100 percent. In addition, the image IDs column are used to match images with their labels, i.e. porosity. It is worth noting that each Batch 1 and 2 has 100 images, which will be for porosity characterization. The first three images chosen from batch1 are shown in Fig 1:
 
-            Figure 1: importing first three images from batch1
+                 Figure 1: importing first three images from batch1
 <img src ="images/fig2.JPG" width =700>
 
+
+However, there are two problems associate with the Viridis color system used for reading images. Firstly, there is a significant variation of color for thresholds ranging from 0 to 10, and hence porosity quantifiaction could be subjected to error. Secondly, identifiaction and quantification of cement hydration product has been done in grayscale color system [1]. Consequently, it is required to convert Viridis to Greyscale color system. Fig 2 provides a comparison of these two different color system
+
+                  Figure 2: comparison of Viridis vs. Greyscale color systems for reading images in python 
+
+<img src ="images/fig3.JPG" width =700>
 
 The input grayscale images are all having 256*196 pixels with grayscale values ranging from 0 to 255; dark pixels are having threshold values close to zero , and pixels with higher thershold values are brighter and represents cement hydrated products in gray and white colors. Image processing plays an integral role for understanding the general characterestics of capillary pore system. 
 
