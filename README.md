@@ -6,7 +6,7 @@ Faisal Qadri
 
 Hossain Kabir, PHD student (Construction Materials Group)
 
-Tianshu Xiao, MS student
+Tianshu Xiao, MS student （Construction Management）
 
 ## [Introduction](Introduction.md)
 
