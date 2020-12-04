@@ -2,10 +2,16 @@
 # Methods:
 
 ## Exploratory Data Analysis (EDA)
-Doing exploratory data analysis (EDA) is required task for characterizing porosity. The input data consist of only two columns, images and their corresponding porosity found from ImageJ commercial software. The exact porosities for both batches, i.e. 1 and 2, are read and shown in Table 1
+Doing exploratory data analysis (EDA) is a required task for characterizing porosity. The input data consist of only two columns, images (IDs) and their corresponding porosity were calculated using ImageJ commercial software. The exact porosities for both batches, i.e. 1 and 2, are read and shown in Table 1:
 
-    Table 1: importing Tabular Data
+                 Table 1: importing Tabular Data
 <img src ="images/fig1.JPG" width =500>
+
+
+As shown in Table 1, porsoties are variable from 0 to 100 percent. In addition, the image IDs column are used to match images with their labels, i.e. porosity. It is worth noting that each Batch 1 and 2 has 100 images, which will be for porosity characterization. The first three images chosen from batch1 are shown in Fig 1:
+
+            Figure 1: importing first three images from batch1
+<img src ="images/fig2.JPG" width =700>
 
 
 The input grayscale images are all having 256*196 pixels with grayscale values ranging from 0 to 255; dark pixels are having threshold values close to zero , and pixels with higher thershold values are brighter and represents cement hydrated products in gray and white colors. Image processing plays an integral role for understanding the general characterestics of capillary pore system. 
