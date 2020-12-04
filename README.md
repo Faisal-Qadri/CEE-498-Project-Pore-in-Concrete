@@ -1,12 +1,12 @@
-# CEE 498 Project: Pore in Concrete
+# CEE 498 Project: Characterization of Porosity in Cement Paste Matrix
 
 Report prepared by:
 
 Faisal Qadri
 
-Hossain Kabir
+Hossain Kabir, PHD student (Construction Materials Group)
 
-xxxxxxxxxxxxxxx
+Tianshu Xiao, MS student
 
 ## [Introduction](Introduction.md)
 
