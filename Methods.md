@@ -26,6 +26,10 @@ As previously mentioned, the color system of images had to be converted to Greys
 <img src ="images/fig4.png" width =500>
 
         Figure 3: identifiaction and quantification of different phases in cement paste matrix using pixel greyscale thresholds
+        
+Fig 4 shows a converted version of Fig 1 transformed from Viridis to Greyscale and would be used for further analysis 
+
+<img src ="images/fig5.JPG" width =700>        
 
 The input grayscale images are all having 256*196 pixels with grayscale values ranging from 0 to 255; dark pixels are having threshold values close to zero , and pixels with higher thershold values are brighter and represents cement hydrated products in gray and white colors. Image processing plays an integral role for understanding the general characterestics of capillary pore system. 
 
