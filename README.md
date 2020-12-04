@@ -13,3 +13,4 @@ Tianshu Xiao, MS student
 ## [Methods](Mrthods.md)
 
 ## [Results](Results.md)
+## [Discussion](Discussion.md)
