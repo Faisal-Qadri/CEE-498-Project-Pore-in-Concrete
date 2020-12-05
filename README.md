@@ -7,7 +7,7 @@ Report prepared by:
 
 Faisal Qadri, PhD Student (Construction Materials Group)
 
-Hossain Kabir, PhD Student (Construction Materials Group)
+Hossein Kabir, PhD Student (Construction Materials Group)
 
 Tianshu Xiao, MS Student (Construction Management）
 
@@ -23,5 +23,7 @@ Tianshu Xiao, MS Student (Construction Management）
 ## [Discussion](Discussion.md)
 
 ## [Conclusion](Conclusions.md)
+
+## [Acknowledgement](acknowledgements.md)
 
 ## [References](References.md)
