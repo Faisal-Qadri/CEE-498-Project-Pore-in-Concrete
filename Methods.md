@@ -2,7 +2,7 @@
 
 ## Exploratory Data Analysis
 
-Exploratory data analysis (EDA) is an important step conducted in any data analysis project for identification, characterization, and quantifiaction of different features. In this project, our input data consists of two columns, images (IDs) and their corresponding porosity, which were found using ImageJ commercial software. Figure 1 shows porosities of the first random 5 images for each batch, showing all images are having porosities vary from 0 to 100 percent.
+Exploratory data analysis (EDA) is an important step conducted on any data analysis project for identification, characterization, and quantifiaction of different features. In this project, our input data consists of two columns, images (IDs) and their corresponding porosity, which were determined by ImageJ commercial software. Figure 1 shows porosities of five random images for each batch, with porosities variable from 0 to 100 percent.
 
 <img src ="images/fig1.JPG" width =500>
 
@@ -32,7 +32,7 @@ As a result, Fig 5 shows a converted version of Fig 1 transformed from Viridis t
 
     Figure 5: transformation of input images from Viridis to Greyscale 
     
-The input grayscale images are all having 256*196 pixels with grayscale thresholds ranging from 0 to 255; dark pixels are having smaller thersholds and represnts pores, while pixels with higher thershold values are brighter and represents cement hydrated products. To quantify pore volume fraction, different thresholds correspond to pores are chosen to determine the impact of threshold limit on the averge porosity (see Fig 6). Fig 6 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), which avoids overestimation of porosity in both batches.
+The input grayscale images are all having 256*196 pixels with grayscale thresholds ranging from 0 to 255; dark pixels represent pores, while pixels with higher thershold values represent cement hydrated or anhydrous products. To quantify pore volume fraction, different thresholds correspond to pores are chosen to determine the impact of threshold limit on the averge porosity (see Fig 6). Fig 6 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), which avoids overestimation of porosity in both batches.
 
 <img src ="images/fig6.JPG" width =700>  
 
