@@ -48,6 +48,10 @@ Figs 7 and 8 represent the important role of assigning a correct threshold value
 
     Figure 8: dependence of batch1 porosity on the assigned luminance
 
+Therefore, luminance of images should be assigned carefully to realistically estimate porosity with minimum error. Fig 9 further illuminates dependence of image analysis on the assigned threshold. In this figure, the exact porosities of images found from ImageJ software are comapred with those estimated using EDA for both two batches. This comparison reveals that as long as the luminance is limited to 20, calculated porosities remain stable and accurate, while exceeding this limits results in over estimatetion of porosites. 
+    
+<img src ="images/fig9.JPG" width =1100> 
+
 
 The images from baches 1 and 2 were analyzed to figure out if there is any data could be extracted. Figures 6 and 7 shows how the distribution of greyscale values within the batch 1. 
 
