@@ -87,6 +87,16 @@ As shown in the Fig 11, for capillary pores having similar area, the perimeter i
 <img src ="images/fig14.JPG" width =400> 
 
     Figure 11: comparing round vs angular shapes
+    
+Accordingly, it is required to calculate area and perimeter of capillary pores in each figure. Based on trial and error attempts, the threshold interval for calculating area of pores is 0 < threshold < 1, while to estimate perimeter, the interval is modified to 1 < threshold < 30. Also, incorporating higher threshold limits (i.e. 30 < threshold < 60) would include hydrates having relatively darker luminance, e.g. magnesium or brucite, that may result in overestimation of porosity. Fig 12 shows estimation of total area as well as total porosity, as a function of luminance interval, for estimating angularity of each image.
+
+<img src ="images/fig15.JPG" width =900> 
+
+    Figure 12: estimating parameters of capillary pores angularity 
+
+
+
+### this part to be completed by Faisal
 
 ![Histogram of greyscale distribution for batch 1](/histogram_batch1.PNG)
 ![distribution of greyscale value in batch 1](/dis_batch1.PNG)
