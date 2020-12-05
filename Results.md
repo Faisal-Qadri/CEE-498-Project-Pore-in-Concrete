@@ -45,12 +45,38 @@ In this step, extracted features corresponding to chemical properties of cement 
 
     Figure 15: Porosity vs. C-S-H or C-H for both batch1 and 2
 
+To do ANN, training dataset has to be fed into the model. Fig 16 illusterates the features combined from batch 1 and 2, having 200 rows in total. 
 
+<img src ="images/fig25.JPG" width =600> 
+
+    Figure 16: Training dataset used for ANN
+
+Similarly, the testing dataset is fed into the model, which is used for validating the employed ANN. Fig 17 illusterates selected features from batch3, which has 100 rows in total. 
+
+<img src ="images/fig26.JPG" width =600> 
+
+    Figure 17: Testing dataset used for ANN
+    
+To evaluate the accuracy of ANN results, RMSE is evaulated for both testing and validation data sets, see Fig 18. As shown in this figure, the RMSE value is decreasing by increasing the number of epochs for both sets, while no overfitting of data is observed. 
+
+<img src ="images/fig20.JPG" width =600> 
+
+    Figure 18: Evaluation of RMSE vs. epochs 
+    
+
+    
 
 ### Appllication of ANN for estimating porosity based on C-S-H & Angularity
 
+To do ANN, training dataset has to be fed in the model. Fig 18 illusterates the features combined from batch 1 and 2, having 200 rows in total. 
 
-### Appllication of CNN for classifying porosity based on SEM images
+<img src ="images/fig20.JPG" width =600> 
+
+    Figure 17: Porosity vs. C-S-H or C-H for both batch 1 and 2
+    
+
+
+### Appllication of CNN for classifying porosity using SEM images
 
 
 As a way of variety, each student tried to deviate a little from the main work. The main work is to build an algorithm that will be able to identify porosity for images from the testing data set. Start writing about porosity, we saw from the explanatory data analysis that the porosity for each batch is normally distributed. Also, from the second plot, it is shown the frequency of porosity within each batch, and the average values of porosity for batch 1 is 18.52% and for batch 2 is 12.17% which are reasonable. The reason behind this explanatory data analysis is to see how porosity distributed among all images in each batch and identify if there is any image that could have unreasonable values. We also figured out that 
