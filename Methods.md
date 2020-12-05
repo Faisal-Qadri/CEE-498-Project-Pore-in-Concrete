@@ -20,29 +20,23 @@ As shown in Fig 2, images were shown in Viridis color system. However, there are
 
     Figure 3: comparison of Viridis vs. Greyscale color systems for reading images in python 
 
-As previously mentioned, the color system of images had to be converted to Greyscale to faciliate chemical analysis of hydartes, and to ease  identification, as well as quantification of porosity in cement paste matrix. In Fig 4, it is shown that pixels having darker luminance belong to capillary pores, intermediate thresholds belong to hydrated products, and high thresholds corresponds to unhydrated products, i.e. unhydrated cementitious materials or aluminate phases. 
+As previously mentioned, the color system of images had to be converted to Greyscale to faciliate chemical analysis of hydartes, and to ease  identification, as well as quantification of porosity in cement paste matrix. In Fig 4, it is shown that pixels having darker luminance belong to capillary pores, intermediate thresholds belong to hydrated products, while higher thresholds belongs to cement hydarted products. 
 
 <img src ="images/fig4.png" width =500>
 
-    Figure 4: identifiaction and quantification of different phases for greyscale SEM images
+    Figure 4: identifiaction and quantification of different phases using greyscale SEM images
     
-As a result, Fig 5 shows a converted version of Fig 1 transformed from Viridis to Greyscale, whcih are used for further EDA.  
+As a result, Fig 5 shows a converted version of Fig 1 transformed from Viridis to Greyscale, whcih wil used for EDA.  
 
 <img src ="images/fig5.JPG" width =700>   
 
     Figure 5: transformation of input images from Viridis to Greyscale 
     
-The input grayscale images are all having 256*196 pixels with grayscale values ranging from 0 to 255; dark pixels are having threshold values close to zero , and pixels with higher thershold values are brighter and represents cement hydrated products in gray and white colors. To quantify pore volume fraction, different thresholds correspond to pores are chosen to determine the impact of threshold limit on the averge porosity (see Fig 5). Fig 5 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), which avoids overestimation of porosity in both batches.
+The input grayscale images are all having 256*196 pixels with grayscale thresholds ranging from 0 to 255; dark pixels are having smaller thersholds and represnts pores, while pixels with higher thershold values are brighter and represents cement hydrated products. To quantify pore volume fraction, different thresholds correspond to pores are chosen to determine the impact of threshold limit on the averge porosity (see Fig 6). Fig 6 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), which avoids overestimation of porosity in both batches.
 
 <img src ="images/fig6.JPG" width =700>  
 
     Figure 5: quantification of average porosity vs. threshold limits
-To quantify diffent phases and the amount of chemica products in images, different threshols are chosen to differentiate between these phases and the chemical products.
-
-
-To quantify pore volume fraction, different thresholds correspond to pores are chosen to determine the impact of threshold limit on the averge porosity (see Fig 5). Fig 5 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), which avoids overestimation of porosity in both batches. 
-
-
 
 The images from baches 1 and 2 were analyzed to figure out if there is any data could be extracted. Figures 6 and 7 shows how the distribution of greyscale values within the batch 1. 
 
