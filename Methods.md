@@ -92,7 +92,7 @@ Accordingly, it is required to calculate area and perimeter of capillary pores i
 
 <img src ="images/fig15.JPG" width =900> 
 
-    Figure 12: estimating parameters of capillary pores angularity 
+    Figure 12: estimating parameters of angularity 
 
 
 
