@@ -5,11 +5,9 @@ Exploratory data analysis (EDA) is an important step to be conducted in any data
 
 <img src ="images/fig1.JPG" width =500>
 
-    Figure 1: importing Tabular Data
-
+    Figure 1: importing abular data for EDA
 
 As shown in figure 1, porosities vary from 0 to 100 percent. Image processing plays an integral role for understanding the general characterestics of pore system. The first three images chosen from batch1 are shown in Fig 2:
-
                
 <img src ="images/fig2.JPG" width =700>
 
