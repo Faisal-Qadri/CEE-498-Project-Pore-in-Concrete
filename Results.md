@@ -11,7 +11,7 @@ Followed by doing model caliberation, it is now required to estimate distributio
 
     Figure 10: finding distribution of porosities in each batch 
     
-However, it is required to determine whether the chosen lognormal distribution is valid. A method called probability plot was then employed to prove lognormality of distribution. Fig 11 shows a relatively high R-squared value found from the probability plot and validates the distribution.
+However, to determine whether the chosen lognormal distribution is valid, a method called probability plot was employed to prove lognormality of the distribution. Fig 11 shows a relatively high R-squared value found from the probability plot and validates the distribution.
 
 <img src ="images/fig11.JPG" width =700> 
 
