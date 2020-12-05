@@ -51,17 +51,32 @@ To quantify pore volume fraction, different thresholds correspond to pores are c
 The images from baches 1 and 2 were analyzed to figure out if there is any data could be extracted. Figures 6 and 7 shows how the distribution of greyscale values within the batch 1. 
 
 ![Histogram of greyscale distribution for batch 1](/histogram_batch1.PNG)
+
+    Figure 6: histogram showing the frequency of greyscale values in batch 1 
 ![distribution of greyscale value in batch 1](/dis_batch1.PNG)
+
+    Figure 7: the distribution of greyscale values in batch 1
 
 Also, figures 8 and 9 shows how the distribution of greyscale values within the batch 2.
 
 ![Histogram of greyscale distribution for batch 2](/histogram_batch2.PNG)
+
+    Figure 8: histogram showing the frequency of greyscale values in batch 2
+
 ![distribution of greyscale value in batch 1](/dis_batch2.PNG)
 
+    Figure 9: the distribution of greyscale values in batch 2
+
+The reason for ploting these histograms is to make sure that the grayscale values are distributed in the same way shown in figure 4.
 ## Modeling
 
 Complex model has been built using *Convolutional Neural Network* (CNN) approach. Having the images from the training set coincided with their labels (porosity values) as the input of the model. This model will be freezed while fetching and processing a previous model performed on a very big data (images). The usual image data set “imagenet” is used as a preprocessed model to let the model train in a complex way to understand and identify images.
 Due to having a very limited number of images, we had to divide porosity into categories in order to make it easier to the model to predict for a limited number of outputs (labels). This division was done by some of the team members as a way of variety in this project. However, in any real case study, specifing categories will be needed to make it more reasonable to predict physiochemical properties such as freezing and thawing since freezing and thawing behavior for example is changing discretely e.g: very poor, poor, acceptable, good, very good.
 
+
+
 Image augmentation is pretty important in image processing. As we deal with pixels values and shapes, we focused on image flipping and sizing augmentation rather than color augmentation since we deal with grayscale images and pixels values.
 
+For the part of recognizing porosity and classify images into classes. The model needed only 80 to reach a reasonable accuracy. Figure 10 shows the hyperparameters used for this model.
+
+![hyperparameters](/hyperparameters.PNG)
