@@ -75,7 +75,18 @@ To determine the robustness of image-based chemical analysis, a random image fro
 <img src ="images/fig13.JPG" width =1100> 
 
     Figure 10: chemical analysis of greyscale SEM images
+    
+### Angularity of Capillary Pores
 
+In the next step, the shape of capillary pores is characterized using a terminology called angularity. For this purpose, a dimensionless formula is defined to calculate angularity based on the total perimeter and area of capillary pores of each figure:
+
+<img src ="images/fig16.JPG" width =200> 
+
+As shown in the Fig 11, for capillary pores having similar area, the perimeter increases with angularity. In other words, pores having similar perimeter but less angularity have larger areas.
+
+<img src ="images/fig14.JPG" width =800> 
+
+    Figure 11: comparison between angular and capillary pores
 
 ![Histogram of greyscale distribution for batch 1](/histogram_batch1.PNG)
 ![distribution of greyscale value in batch 1](/dis_batch1.PNG)
