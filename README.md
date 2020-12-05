@@ -20,6 +20,8 @@ Tianshu Xiao, MS Student (Construction Management）
 
 ## [Results](Results.md)
 
-## [Discussion and Conclusion](Discussion.md)
+## [Discussion](Discussion.md)
+
+## [Conclusion](Conclusion.md)
 
 ## [References](References.md)
