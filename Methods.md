@@ -1,7 +1,7 @@
 # Methods:
 
 ## Exploratory Data Analysis
-Exploratory data analysis (EDA) is important to be conducted in any data analysis project. This helps to understand what is hidden behind the features and to understand the important features and eliminate the unnecessary features. This also helps to identify if there is any correlation between the features themself, or any correlation betweeen features and prediction label.
+Exploratory data analysis (EDA) is important step to be conducted in any data analysis project for, especifically for identification, and characterization of different features . This helps to understand what is hidden behind the features and to understand the important features and eliminate the unnecessary features. This also helps to identify if there is any correlation between the features themself, or any correlation betweeen features and prediction label.
 
 The raw input data consist of only two columns, images (IDs) and their corresponding porosity which were calculated using ImageJ commercial software. Figure 1 shows a snapshot taken from the Kaggle showing porosities for 5 images for each batch.
 
