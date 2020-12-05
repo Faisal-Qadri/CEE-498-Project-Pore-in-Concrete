@@ -66,7 +66,12 @@ Followed by doing model caliberation, it is now required to estimate distributio
 <img src ="images/fig10.JPG" width =1100> 
 
     Figure 10: finding distribution of porosities in each batch 
+    
+However, it is required to determine whether the chosen lognormal distribution is valid. For this reason, a method called probability plot was employed to prove lognormality of distribution. Fig 11 shows a relatively high R-squared value found from the probability plot and validates the distribution.
 
+<img src ="images/fig11.JPG" width =700> 
+
+    Figure 11: porbability plot test of the chosen lognormal distribution
 
 The images from baches 1 and 2 were analyzed to figure out if there is any data could be extracted. Figures 6 and 7 shows how the distribution of greyscale values within the batch 1. 
 
