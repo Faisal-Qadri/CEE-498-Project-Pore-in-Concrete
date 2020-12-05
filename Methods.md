@@ -1,7 +1,8 @@
 # Methods:
 
 ## Exploratory Data Analysis
-Exploratory data analysis (EDA) is an important step to be conducted in any data analysis project for identification, and characterization of different features. In this project, our input data consists of two columns, images (IDs) and their corresponding porosity which were calculated using ImageJ commercial software. Figure 1 shows porosities of the first 5 images for each batch.
+
+Exploratory data analysis (EDA) is an important step conducted in any data analysis project for identification, and characterization of different features. In this project, our input data consists of two columns, images (IDs) and their corresponding porosity which were calculated using ImageJ commercial software. Figure 1 shows porosities of the first 5 images for each batch.
 
 <img src ="images/fig1.JPG" width =500>
 
@@ -19,7 +20,7 @@ As shown in Fig 2, images were shown in Viridis color system. However, there are
 
     Figure 3: comparison of Viridis vs. Greyscale color systems for reading images in python 
 
-As previously mentioned, the color system of images had to be converted to Greyscale to faciliate chemical analysis of hydartes, and to ease idetifyication of pore characteristics. In Fig 4, it is shown that pixels having darker luminance belong to pores, intermediate thresholds belong to hydrated products, and high thresholds corresponds to unhydrated products, i.e. unhydrated cementitious materials. 
+As previously mentioned, the color system of images had to be converted to Greyscale to faciliate chemical analysis of hydartes, and to ease  identification, as well as quantification of porosity in cement paste matrix. In Fig 4, it is shown that pixels having darker luminance belong to capillary pores, intermediate thresholds belong to hydrated products, and high thresholds corresponds to unhydrated products, i.e. unhydrated cementitious materials or aluminate phases. 
 
 <img src ="images/fig4.png" width =500>
 
