@@ -84,9 +84,9 @@ In the next step, the shape of capillary pores is characterized using a terminol
 
 As shown in the Fig 11, for capillary pores having similar area, the perimeter increases with angularity. In other words, pores having similar perimeter but less angularity have larger areas.
 
-<img src ="images/fig14.JPG" width =800> 
+<img src ="images/fig14.JPG" width =400> 
 
-    Figure 11: comparison between angular and capillary pores
+    Figure 11: comparing round vs angular shapes
 
 ![Histogram of greyscale distribution for batch 1](/histogram_batch1.PNG)
 ![distribution of greyscale value in batch 1](/dis_batch1.PNG)
