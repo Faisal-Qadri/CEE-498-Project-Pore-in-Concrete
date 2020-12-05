@@ -2,11 +2,11 @@
 
 Report prepared by:
 
-Faisal Qadri
+Hossain Kabir, PHD Student (Construction Materials Group)
 
-Hossain Kabir, PHD student (Construction Materials Group)
+Faisal Qadri, PHD Student (Construction Materials Group)
 
-Tianshu Xiao, MS student （Construction Management）
+Tianshu Xiao, MS Student Construction Management）
 
 ## [Introduction](Introduction.md)
 
