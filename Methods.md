@@ -26,17 +26,22 @@ As previously mentioned, the color system of images had to be converted to Greys
 
     Figure 4: identifiaction and quantification of different phases using greyscale SEM images
     
-As a result, Fig 5 shows a converted version of Fig 1 transformed from Viridis to Greyscale, whcih wil used for EDA.  
+As a result, Fig 5 shows a converted version of Fig 1 transformed from Viridis to Greyscale, which will be used for EDA.  
 
 <img src ="images/fig5.JPG" width =700>   
 
     Figure 5: transformation of input images from Viridis to Greyscale 
     
-The input grayscale images are all having 256*196 pixels with grayscale thresholds ranging from 0 to 255; dark pixels represent pores, while pixels with higher thershold values represent cement hydrated or anhydrous products. To quantify pore volume fraction, different thresholds correspond to pores are chosen to determine the impact of threshold limit on the averge porosity (see Fig 6). Fig 6 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), which avoids overestimation of porosity in both batches.
+The input grayscale images are all having 256*196 pixels with grayscale thresholds ranging from 0 to 255; dark pixels represent pores, while pixels with higher thershold values represent cement hydrated or anhydrous products. To quantify pore volume fraction, different thresholds correspond to pores are chosen to determine the impact of threshold limit on the averge porosity (see Fig 6). Fig 6 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), which avoids overestimation of porosity in both batches. Almost 400 million pixels were analyzed to generate this figure.
 
 <img src ="images/fig6.JPG" width =700>  
 
-    Figure 5: quantification of average porosity vs. threshold limits
+    Figure 6: quantification of average porosity vs. threshold limits
+    
+Figs 7 and 8 represent the important role of assigning a correct threshold value for characterizing porosity. In other words, increasing the luminance (threshold) of images from a certain limit (i.e. i.e. 14 and 9 for batches 1 and 2, respectively) will result in the inclusion of dark hydration products (i.e. precialse or luminance), which has to be avoide. 
+    
+<img src ="images/fig7.JPG" width =1100>      
+
 
 The images from baches 1 and 2 were analyzed to figure out if there is any data could be extracted. Figures 6 and 7 shows how the distribution of greyscale values within the batch 1. 
 
