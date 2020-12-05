@@ -37,7 +37,7 @@ Considering Fig 14, only Calcium Silicate Hydrate (C-S-H), Portlandite (C-H), an
 
     Figure 14: SNS Heatmap of correlations between features extracted from image analysis
 
-### Appllication of ANN for estimating porosity based on C-S-H & C-H
+### Appllication of ANN for estimating porosities based on C-S-H & C-H
 
 In this step, extracted features corresponding to chemical properties of cement and highly correlred to pore volume fraction, i.e C-S-H and C-H, are selected to be predicitve of porosity. Considering Fig 15, it could be realized that the corrlation between porosity and C-S-H or C-H is not linear. Also, increasing porosity would result in a reduction in both C-S-H and C-H values. 
 
@@ -57,29 +57,39 @@ Similarly, the testing dataset is fed into the model, which is used for validati
 
     Figure 17: Testing dataset used for ANN
     
-To evaluate the accuracy of ANN results, RMSE is evaulated for both testing and validation data sets, see Fig 18. As shown in this figure, the RMSE value is decreasing by increasing the number of epochs for both sets, while no overfitting of data is observed. 
-
-<img src ="images/fig20.JPG" width =600> 
-
-    Figure 18: Evaluation of RMSE vs. epochs 
-    
-
-    
-
-### Appllication of ANN for estimating porosity based on C-S-H & Angularity
-
-To do ANN, training dataset has to be fed in the model. Fig 18 illustrates the features combined from batch 1 and 2, having 200 rows in total. 
+To evaluate the accuracy of ANN results, RMSE is evaulated for both testing and validation data sets, see Fig 18. As shown in this figure, the RMSE value is continuously  decreasing by increasing the number of epochs for both sets, while no overfitting of data is observed. 
 
 <img src ="images/fig20.JPG" width =400> 
 
-    Figure 17: Porosity vs. C-S-H or C-H for both batch 1 and 2
+    Figure 18: Evaluation of RMSE vs. epochs in the first model
     
-In the next step, the porosities for the training and testing batches are estimated and compared with the exact, i.e. true, porosities. Fig 19 shows matched porosites, i.e. estimated vs. exact, found by ANN. 
+ANN also facilitates matching estimated versus true porosites of training and testing datasets, which are shown in Fig 19. This figure confirms the relatively high accuracy of results, i.e. approximately 90% and 80% for testing and training datasets using ANN inspite of having a limited number of, i.e. 200, SEM images. 
 
 <img src ="images/fig21.JPG" width =900> 
 
-    Figure 17: matching porosities for training asd testing datasets.
+    Figure 19: matching porosities for training and testing datasets, first model   
+
+### Appllication of ANN for estimating porosities based on C-S-H & Angularity
+
+It is of interest to determine whether extracted features corresponding to chemical and physical properties of cement are highly correlated with pore volume fraction. For this purpose, C-S-H together with angularity are chosen to be predicitve of porosity. Figure 20 represents the strong corrlation between porosity and C-S-H or angualriy, although this correlation is not linear. In addition, it was found that increasing porosity would enhance angularity of capillary pores. 
+
+<img src ="images/fig22.JPG" width =1100> 
+
+    Figure 20: Porosity vs. C-S-H or Angularity for both batch1 and 2
+  
+To evaluate the accuracy of ANN results, RMSE is evaulated for both testing and validation data sets, see Fig 21. As shown in this figure, the RMSE value is continuously  decreasing by increasing the number of epochs for both sets, while no overfitting of data is observed. 
+
+<img src ="images/fig23.JPG" width =400> 
+
+    Figure 21: Evaluation of RMSE vs. epochs in the second model
     
+ANN also facilitates statistical matching estimated versus true porosites of training and testing datasets, which are shown in Fig 22. This figure confirms the relatively high accuracy of results, i.e. approximately 70% and 60% for testing and training datasets using ANN inspite of having a limited nummber of , i.e. 200, SEM images. 
+
+<img src ="images/fig24.JPG" width =900> 
+
+    Figure 22: matching porosities for training and testing datasets, second model
+    
+
 ### Appllication of CNN for classifying porosity using SEM images
 
 
