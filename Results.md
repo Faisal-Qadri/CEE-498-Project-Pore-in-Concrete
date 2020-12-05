@@ -68,14 +68,18 @@ To evaluate the accuracy of ANN results, RMSE is evaulated for both testing and 
 
 ### Appllication of ANN for estimating porosity based on C-S-H & Angularity
 
-To do ANN, training dataset has to be fed in the model. Fig 18 illusterates the features combined from batch 1 and 2, having 200 rows in total. 
+To do ANN, training dataset has to be fed in the model. Fig 18 illustrates the features combined from batch 1 and 2, having 200 rows in total. 
 
-<img src ="images/fig20.JPG" width =600> 
+<img src ="images/fig20.JPG" width =400> 
 
     Figure 17: Porosity vs. C-S-H or C-H for both batch 1 and 2
     
+In the next step, the porosities for the training and testing batches are estimated and compared with the exact, i.e. true, porosities. Fig 19 shows matched porosites, i.e. estimated vs. exact, found by ANN. 
 
+<img src ="images/fig21.JPG" width =900> 
 
+    Figure 17: matching porosities for training asd testing datasets.
+    
 ### Appllication of CNN for classifying porosity using SEM images
 
 
