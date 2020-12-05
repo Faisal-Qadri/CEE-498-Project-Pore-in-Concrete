@@ -1,10 +1,6 @@
 # CEE 498 Project: Characterization of Porosity in Cement Paste Matrix
 
 
-Report prepared by:
-
-
-
 Faisal Qadri, PhD Student (Construction Materials Group)
 
 Hossein Kabir, PhD Student (Construction Materials Group)
