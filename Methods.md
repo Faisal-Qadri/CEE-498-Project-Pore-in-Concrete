@@ -61,6 +61,12 @@ Considering Fig 9, the threshold limit = 0 is finally chosen to accurately estim
  
  ### Estimating Porosity Distribution 
 
+Followed by doing model caliberation, it is now required to estimate distribution of porosities in each batch. For this purpose, histogram of porosites at threshold = 0 is sketched in Fig 10 for both batches using different bandwidth (bins) values. Considering this figure, histograms having smaller bins value, i.e. bins = 10, suggest lognormality of porosities in each batch. 
+
+<img src ="images/fig10.JPG" width =1100> 
+
+    Figure 10: finding distribution of porosities in each batch 
+
 
 The images from baches 1 and 2 were analyzed to figure out if there is any data could be extracted. Figures 6 and 7 shows how the distribution of greyscale values within the batch 1. 
 
