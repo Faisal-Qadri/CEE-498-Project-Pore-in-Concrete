@@ -1,11 +1,11 @@
 # CEE 498 Project: Characterization of Porosity in Cement Paste Matrix
 
 
-Faisal Qadri, PhD Student (Construction Materials Group)
+Faisal Qadri, PhD Student, Construction Materials Group, University of Illinois
 
-Hossein Kabir, PhD Student (Construction Materials Group)
+Hossein Kabir, PhD Student, Construction Materials Group, University of Illinois
 
-Tianshu Xiao, MS Student (Construction Management）
+Tianshu Xiao, MS Student, Construction Management, University of Illinois
 
 
 ## [Abstract](Abstract.md)
