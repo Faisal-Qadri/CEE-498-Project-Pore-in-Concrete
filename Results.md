@@ -20,6 +20,25 @@ However, to determine whether the chosen lognormal distribution is valid, a meth
 By proving the lognormality of porosityies in both batch 1 and 2, it is of interest to determine whether these two distribution matches at line y=x. Accordingly, the two lognormal distributions were plotted against on another, and shows a high affinity of, see Fig 12. It is worth noting that any point placed prior to the lognormal peak, specified with a dashed-line was eleminared from the matching procedure.  
 
 <img src ="images/fig12.JPG" width =700> 
+
+    Figure 12: matching lognormal distribution of porosities of batch1 and 2
+
+## Feature Engineering
+
+Using EDA, different features for characterizing porosity are extracted and shown in Fig 13. However, is a required task to determine whether these features are capable of estimating porosity 
+
+<img src ="images/fig17.JPG" width =700> 
+
+    Figure 13: extracting features (physical and chemical) from SEM images
+    
+Considering Fig 14, only Calcium Silicate Hydrate (C-S-H), Portlandite (C-H), and Angularity features have strong correlation, i.e. either positive or negative, with porosity. Consequently, these feature are likely to be predictive of pore volume fraction for use in Neural Network.  
+
+<img src ="images/fig18.JPG" width =700> 
+
+    Figure 14: SNS Heatmap of correlations between features extracted from image analysis
+
+
+
 As a way of variety, each student tried to deviate a little from the main work. The main work is to build an algorithm that will be able to identify porosity for images from the testing data set. Start writing about porosity, we saw from the explanatory data analysis that the porosity for each batch is normally distributed. Also, from the second plot, it is shown the frequency of porosity within each batch, and the average values of porosity for batch 1 is 18.52% and for batch 2 is 12.17% which are reasonable. The reason behind this explanatory data analysis is to see how porosity distributed among all images in each batch and identify if there is any image that could have unreasonable values. We also figured out that 
 
 ![training and testing loss](/loss.PNG)
