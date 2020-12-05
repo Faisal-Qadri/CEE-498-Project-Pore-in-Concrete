@@ -13,11 +13,10 @@ As shown in figure 1, porosities vary from 0 to 100 percent. Image processing pl
 
     Figure 2: importing first three images from batch1
 
-However, there are two problems associate with the Viridis color system used for reading images. Firstly, there is a significant variation of color for thresholds ranging from 0 to 10, and hence porosity quantifiaction could be subjected to error. Secondly, identifiaction and quantification of cement hydration products has been done in grayscale color system [1]. Consequently, it is required to convert Viridis to Greyscale color system. Fig 3 provides a comparison of these two different color system
+As shown in Fig 2, images were shown in Viridis color system. However, there are two problems associate with the Viridis color system used for reading images. Firstly, there is a significant variation of color for thresholds ranging from 0 to 10, hence porosity quantification may subject to instability. Secondly, identifiaction and quantification of cement hydration products has been done in Greyscale color system [1]. Consequently, it is required to convert Viridis to Greyscale color system to enahnce accuracy of EDA. Fig 3 provides a comparison of these two different color systems
 
 <img src ="images/fig3.JPG" width =700>
 
-                  
     Figure 3: comparison of Viridis vs. Greyscale color systems for reading images in python 
 
 As previously mentioned, the color system of images had to be converted to Greyscale to faciliate chemical analysis of hydartes, and to ease idetifyication of pore characteristics. In Fig 4, it is shown that pixels having darker luminance belong to pores, intermediate thresholds belong to hydrated products, and high thresholds corresponds to unhydrated products, i.e. unhydrated cementitious materials. 
