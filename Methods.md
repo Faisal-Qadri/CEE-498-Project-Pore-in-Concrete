@@ -60,6 +60,23 @@ Considering Fig 9, the threshold limit = 0 is finally chosen to accurately estim
 
 The images from baches 1 and 2 were analyzed to figure out if there is any data could be extracted. Figures 6 and 7 shows how the distribution of greyscale values within the batch 1. 
 
+### Chemical Analysis
+
+As previously mentioned, greyscale SEM images are required to be considered for chemical analysis. The following thresholds intervals are defined for each image to characterize different phases:
+
+* Capillary Pores: 0 < threshold < 1
+* Magnesium/ Sulphur: 1 < threshold < 70
+* Calcium Silicate Hydrates (C-S-H): 70 < threshold < 140
+* Calcium Hydroxide (C-H): 140 < threshold < 180
+* Unknown (Anhydrous/ Aluminum): 180 < threshold < 255
+
+As an example, 
+
+<img src ="images/fig13.JPG" width =1100> 
+
+    Figure 9: matching estimated porosities with exact porosities for different threshold limits
+
+
 ![Histogram of greyscale distribution for batch 1](/histogram_batch1.PNG)
 ![distribution of greyscale value in batch 1](/dis_batch1.PNG)
 
@@ -67,6 +84,7 @@ Also, figures 8 and 9 shows how the distribution of greyscale values within the 
 
 ![Histogram of greyscale distribution for batch 2](/histogram_batch2.PNG)
 ![distribution of greyscale value in batch 1](/dis_batch2.PNG)
+
 
 ## Modeling
 
