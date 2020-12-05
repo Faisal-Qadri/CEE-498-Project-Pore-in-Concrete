@@ -1,2 +1,2 @@
 ## Acknowledgements
-We would like sincerely thank for partial support from University Illinois MRL lab.
+We would like to acknowledge partial support from University of Illinois Material Research Laboratory (MRL).
