@@ -70,11 +70,11 @@ As previously mentioned, greyscale SEM images are required to be considered for 
 * Calcium Hydroxide (C-H): 140 < threshold < 180
 * Unknown (Anhydrous/ Aluminum): 180 < threshold < 255
 
-As an example, 
+To determine the robustness of image-based chemical analysis, a random image from batch1 is selected and characterized in Fig 10.
 
 <img src ="images/fig13.JPG" width =1100> 
 
-    Figure 9: matching estimated porosities with exact porosities for different threshold limits
+    Figure 10: chemical analysis of greyscale SEM images
 
 
 ![Histogram of greyscale distribution for batch 1](/histogram_batch1.PNG)
