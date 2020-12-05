@@ -2,13 +2,13 @@
 
 ## Exploratory Data Analysis
 
-Exploratory data analysis (EDA) is an important step conducted in any data analysis project for identification, and characterization of different features. In this project, our input data consists of two columns, images (IDs) and their corresponding porosity which were calculated using ImageJ commercial software. Figure 1 shows porosities of the first 5 images for each batch.
+Exploratory data analysis (EDA) is an important step conducted in any data analysis project for identification, characterization, and quantifiaction of different features. In this project, our input data consists of two columns, images (IDs) and their corresponding porosity, which were found using ImageJ commercial software. Figure 1 shows porosities of the first random 5 images for each batch, showing all images are having porosities vary from 0 to 100 percent.
 
 <img src ="images/fig1.JPG" width =500>
 
     Figure 1: importing tabular data for EDA
 
-As shown in Figure 1, porosities vary from 0 to 100 percent. It is worth noting that each Batch 1 and 2 has 100 images, which will be for porosity characterization. Image processing plays an integral role for understanding the general characterestics of pore system. The first three images chosen from batch1 are shown in Fig 2:
+It is worth noting that each Batch 1 and 2 has 100 images, which will be used for porosity characterization. In the next step, images are read to facilitate understanding of the general characterestics of pore system. The first three images chosen from batch1 are shown in Fig 2:
                
 <img src ="images/fig2.JPG" width =700>
 
