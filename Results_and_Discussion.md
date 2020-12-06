@@ -1,4 +1,4 @@
-# Results:
+# Results and Discussion:
 
 
 ## Exploratory Data Analysis
