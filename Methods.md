@@ -112,7 +112,7 @@ The ANN model structure consists of layers having different complexities, which 
 
 <img src ="images/fig29.JPG" width =1000> 
 
-    Figure 15: representing the type of variables used for training ANN
+    Figure 15: creating ANN model
 
 ### this part to be completed by Faisal
 
