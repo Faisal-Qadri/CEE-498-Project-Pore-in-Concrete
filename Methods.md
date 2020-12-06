@@ -2,7 +2,7 @@
 
 ## Exploratory Data Analysis
 
-Exploratory data analysis (EDA) is an important step conducted on any data analysis project for identification, characterization, and quantifiaction of different features. In this project, our input data consists of two columns, images (IDs) and their corresponding porosity, which were determined by ImageJ commercial software. Figure 1 shows porosities of five random images for each batch, with porosities variable from 0 to 100 percent.
+Exploratory data analysis (EDA) is an important step conducted on any data analysis project for identification, characterization, and quantifiaction of different features. In this project, our input data consists of two columns, images (IDs) and their corresponding porosity, which were determined by ImageJ commercial software. Fig 1 shows porosities of five random images for each batch, with porosities variable from 0 to 100 percent.
 
 <img src ="images/fig1.JPG" width =500>
 
@@ -30,24 +30,7 @@ As a result, Fig 5 shows a converted version of Fig 1 transformed from Viridis t
 
 <img src ="images/fig5.JPG" width =700>   
 
-    Figure 5: transformation of input images from Viridis to Greyscale 
-
-The images from baches 1 and 2 were analyzed to recognize if there is any data could be extracted. Fig 6 (a, b) shows how the distribution of greyscale values within the batch 1. 
-
-![Histogram of greyscale distribution for batch 1](/histogram_batch1.PNG)
-![distribution of greyscale value in batch 1](/dis_batch1.PNG)
-
-    Figure 6: a) histogram showing the grayscale value distribution of images in batch 1; b) the distribution of  grayscale value of images in batch 1
-
-Also, fig 7 (a, b) shows how the distribution of greyscale values within the batch 2.
-
-![Histogram of greyscale distribution for batch 2](/histogram_batch2.PNG)
-![distribution of greyscale value in batch 1](/dis_batch2.PNG)
-    
-    Figure 7: a) histogram showing the grayscale value distribution of images in batch 2; b) the distribution of  grayscale value of images in batch 2
-
-Interestingly, the distributions of grayscale values for both batchs 1 and 2 are alike the grayscale value distribution distribution in fig 4. This confirms that the data acquired is reasonable and is valied to be analyzed.
- 
+    Figure 5: transformation of input images from Viridis to Greyscale  
 ### Model Caliberation
     
 To quntify porosity and other characterestics of images, including chemistry and angularity of pores, it is a required task to caliberate the model. The input grayscale images are all having 256*196 pixels with grayscale thresholds ranging from 0 to 255; dark pixels represent pores, while pixels with higher thershold values represent cement hydrated or anhydrous products. To quantify pore volume fraction, different thresholds correspond to pores are chosen to determine the impact of threshold limit on the averge porosity (see Fig 6). Fig 6 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), which avoids overestimation of porosity in both batches. Almost 400 million pixels were analyzed to generate this figure.
@@ -112,8 +95,15 @@ Accordingly, it is required to calculate area and perimeter of capillary pores i
 
 ## Modeling
 
-Complex model has been built using Convolutional Neural Network (CNN) approach. Having the images from the training set coincided with their labels (porosity values) as the input of the model. This model will be freezed while fetching and processing a previous model performed on a very big data (images). The usual image data set “imagenet” is used as a preprocessed model to let the model train in a complex way to understand and identify images.
+A model has been built using Convolutional Neural Network (CNN) approach. Having the images from the training set coincided with their labels (porosity values) as the input of the model. This model will be freezed while fetching and processing a previous model performed on a very big data (images). The usual image data set “imagenet” is used as a preprocessed model to let the model train in a complex way to understand and identify images.
 Due to having a very limited number of images, we had to divide porosity into categories in order to make it easier to the model to predict for a limited number of outputs (labels). This division was done by some of the team members as a way of variety in this project. However, in any real case study, specifing categories will be needed to make it more reasonable to predict physiochemical properties such as freezing and thawing since freezing and thawing behavior for example is changing discretely e.g: very poor, poor, acceptable, good, very good.
 
 Image augmentation is pretty important in image processing. As we deal with pixels values and shapes, we focused on image flipping and sizing augmentation rather than color augmentation since we deal with grayscale images and pixels values.
 
+Regarding the model, it was not different from what was given in the class. Manipulation of hyperparameters was critical in order to achieve a satisfactory accuracy. Fig 13 shows the model and Fig 14 shows the used hyperparameters in the CNN model. The used epochs is 80, and learning rate is 5.0 e-5.
+![model](/model.PNG)
+
+    Figure 13: the CNN model algorithm 
+![distribution of greyscale value in batch 1](/hyperparameters.PNG)
+    
+    Figure 14: hyperparameters for CNN model
