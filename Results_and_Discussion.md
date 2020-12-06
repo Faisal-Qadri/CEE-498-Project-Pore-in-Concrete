@@ -3,6 +3,22 @@
 ## Exploratory Data Analysis
 
 As mentioned in the previous section, EDA is an effective approach to analyze the present dataset for identification, quantification, and characterization of pore system in cement-based matrix.
+ ### Identifying Grayscale Value  Distribution 
+The images from baches 1 and 2 were analyzed to recognize if there is any data could be extracted. Fig 10 (a, b) shows how the distribution of greyscale values within the batch 1. 
+
+![Histogram of greyscale distribution for batch 1](/histogram_batch1.PNG)
+![distribution of greyscale value in batch 1](/dis_batch1.PNG)
+
+    Figure 10: a) histogram showing the grayscale value distribution of images in batch 1; b) the distribution of  grayscale value of images in batch 1
+
+Also, fig 11 (a, b) shows how the distribution of greyscale values within the batch 2.
+
+![Histogram of greyscale distribution for batch 2](/histogram_batch2.PNG)
+![distribution of greyscale value in batch 1](/dis_batch2.PNG)
+    
+    Figure 11: a) histogram showing the grayscale value distribution of images in batch 2; b) the distribution of  grayscale value of images in batch 2
+
+Interestingly, the distributions of grayscale values for both batchs 1 and 2 are alike the grayscale value distribution distribution in fig 4. This confirms that the data acquired is reasonable and is valied to be analyzed.
 
  ### Estimating Porosity Distribution 
 
@@ -96,10 +112,26 @@ ANN also facilitates statistical matching estimated versus true porosities of tr
 Model II is also capable of relating physical as well as chemical properties of cement to its porosity, but with lower accuracy compared with Model I. The reduction in results accuracy could be attributed to the formula introduced in this paper for calculation of angularity. Nonetheless, to the authors knowledge, for the first time in the literature, angularity of pores was found to be correlated with porosity. This phenomenon shall be further explored in the future research.    
 
 ### Appllication of CNN for classifying porosity using SEM images (Model III)
+Images from both batches 1 and 2 were merged into one batch to ease working on all images. Fig 23 shows example of the categorized images.
+
+![merged images and categorized](/batch 1&2 cat.PNG)
+
+    Figure 23: a snapshot showing the categorized images from both batches 1 and 2
+
+CNN model was build using the 200 imges from the training dataset and applied to predict the porosity 100 images in the testing dataset. Fig 24 shows the acuuracy values for both training and testing datasets. Also Fig 25 shows the loss values for both batches training and testing datasets.
+![training and testing loss](/loss.PNG)
+
+    Figure 24: accuracy valeus for both training and testing datasets
+![training and testing accuracy](/accuracy.PNG)
+
+    Figure 25: loss valeus for both training and testing datasets
+
+We see that both tha accuracy and loss valeus for both the training and testing datasets are approching to each other. This confirms the validety of the model. However, the accuracy values are not very high, this is expected due to having a very limited number of images.
+
 
 As a way of variety, each student tried to deviate a little from the main work. The main work is to build an algorithm that will be able to identify porosity for images from the testing data set. Start writing about porosity, we saw from the explanatory data analysis that the porosity for each batch is normally distributed. Also, from the second plot, it is shown the frequency of porosity within each batch, and the average values of porosity for batch 1 is 18.52% and for batch 2 is 12.17% which are reasonable. The reason behind this explanatory data analysis is to see how porosity distributed among all images in each batch and identify if there is any image that could have unreasonable values. We also figured out that 
 
-![training and testing loss](/loss.PNG)
 
-![training and testing accuracy](/accuracy.PNG)
+
+
 
