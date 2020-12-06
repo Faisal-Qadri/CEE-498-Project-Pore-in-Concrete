@@ -4,77 +4,75 @@
 
 In the present project, EDA plays an intergal role project for identification, characterization, or quantifiaction of different features. The input data used consists of two columns: images (IDs), and their correspondent porosity exprted by ImageJ commercial software. Fig 1 shows porosities of five random images for each batch, ranging from 0 to 100 percent.
 
-<img src ="images/fig1.JPG" width =500>
+<img src ="images/fig1.JPG" width =600>
 
     Figure 1: Importing tabular data for EDA
 
 It is worth noting that each Batch 1 and 2 has 100 images, which will be used for porosity characterization. The first three images chosen from batch1 are shown in Fig 2:
                
-<img src ="images/fig2.JPG" width =700>
+<img src ="images/fig2.JPG" width =900>
 
     Figure 2: Importing first three random images from batch1
 
 As shown in Fig 2, images were shown in Viridis color system. However, there are two problems associate with the Viridis color system used for reading images. Firstly, there is a significant variation of colors for low thresholds, i.e. ranging from 0 to 10, hence porosity quantification may subject to instability. Secondly, identifiaction and quantification of cement hydration products has been done in Greyscale color system [4]. Consequently, it is required to convert Viridis to Greyscale color system to enahnce accuracy of EDA. Fig 3 provides a comparison of these two different color systems.
 
-<img src ="images/fig3.JPG" width =700>
+<img src ="images/fig3.JPG" width =900>
 
     Figure 3: Comparison of Viridis vs. Greyscale color systems for reading images in python 
 
 As previously mentioned, the color system of images had to be converted to Greyscale to improve stability chemical analysis of hydartes, as well as to ease identification, as and quantification of porosity in cement paste matrix. As shown in Fig 4, pixels having darker luminance may belong to capillary pores, intermediate thresholds represent hydrated products, and higher thresholds belongs to unknown phases, including anhydrous or aluminate [4]. 
 
-<img src ="images/fig4.png" width =500>
+<img src ="images/fig4.png" width =700>
 
     Figure 4: Identifiaction and quantification of different phases using greyscale SEM images[4]
     
 As a result, Fig 5 shows a converted version of Fig 1 from Viridis to Greyscale systems, used for EDA.  
 
-<img src ="images/fig5.JPG" width =700>   
+<img src ="images/fig5.JPG" width =900>   
 
     Figure 5: Transformation images from Viridis to Greyscale 
     
 ### Model Caliberation
     
-To quntify porosity and other characterestics of images, including chemistry and angularity of pores, it is a required tesk to caliberate the model. The input grayscale images are all having 256*196 pixels with grayscale thresholds ranging from 0 to 255; dark pixels represent pores, while pixels with higher thershold values represent cement hydrated or anhydrous products. To quantify pore volume fraction, different thresholds correspond to pores are chosen to determine the impact of threshold limit on the averge porosity (see Fig 6). Fig 6 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), which avoids overestimation of porosity in both batches. Almost 400 million pixels were analyzed to generate this figure.
+To quantify porosityies and other characterestics of SEM images, including chemistry of hydrates and angularity of pores, it is a required task to caliberate the model. The input grayscale images are all having 256*196 pixels with grayscale thresholds ranging from 0 to 255; and as mentioned earlier, dark pixels represent pores, while pixels with higher thershold values represent cement hydration products or anhydrous phases. To quantify pore volume fraction, different thresholds correspond are chosen to determine the averge porosity of images in each batch (see Fig 6). Fig 6 illuminates the maximum thresholds for both batches (i.e. 14 and 9 for batches 1 and 2, respectively), to avoid overestimation of porosity in each batch. As a side note, almost 400 million pixels were analyzed by python to generate this figure.
 
-<img src ="images/fig6.JPG" width =700>  
+<img src ="images/fig6.JPG" width =900>  
 
-    Figure 6: quantification of average porosity vs. threshold limits
+    Figure 6: quantification of average porosity vs. different threshold limits
 
-Figs 7 and 8 represent the important role of assigning a correct threshold value for characterizing porosity. In other words, increasing the luminance (threshold) of images from a certain limit (i.e. i.e. 14 and 9 for batches 1 and 2, respectively) will result in the inclusion of dark hydration products (i.e. precialse or luminance), which has to be avoide. 
+Figs 7 and 8 represent the important role of assigning a correct threshold value for characterizing porosity. As shown in these figures, increasing the luminance (threshold) of images from a certain limit (i.e. i.e. 14 and 9 for batches 1 and 2, respectively) will result in the overestimation of porosities due to the inclusion of dark hydration products (e.g. periclase or brucite).
     
-<img src ="images/fig7.JPG" width =1100>    
+<img src ="images/fig7.JPG" width =1700>    
 
     Figure 7: dependence of batch1 porosity on the assigned luminance 
 
-<img src ="images/fig8.JPG" width =1100> 
+<img src ="images/fig8.JPG" width =1700> 
 
     Figure 8: dependence of batch1 porosity on the assigned luminance
 
-Therefore, luminance of images should be assigned carefully to realistically estimate porosity with minimum error. Fig 9 further illuminates dependence of image analysis on the assigned threshold. In this figure, the exact porosities of images found from ImageJ software are comapred with those estimated using EDA for both two batches. This comparison reveals that as long as the luminance is limited to 10, calculated porosities remain stable and accurate, while exceeding this limits results in over estimatetion of porosites. 
+Therefore, luminance of images should be carefully assigned to realistically estimate porosity with minimum error. Fig 9 further illuminates dependence of image analysis on the assigned threshold. In this figure, the exact porosities of images found from ImageJ software are compared with those estimated by EDA. This comparison reveals that as long as the luminance is limited to 10, calculated porosities remain stable and accurate for both batches, while exceeding this limits results in over estimatetion of porosites. 
     
-<img src ="images/fig9.JPG" width =1100> 
+<img src ="images/fig9.JPG" width =1400> 
 
-    Figure 9: matching estimated porosities with exact porosities for different threshold limits
+    Figure 9: Matching estimated vs. exact porosities for different threshold limits
 
-Considering Fig 9, the threshold limit = 0 is finally chosen to accurately estimate the porosity of images. 
+Considering Fig 9, the threshold limit = 0 is finally chosen to accurately estimate the porosity of images for all batches. 
 
-The images from baches 1 and 2 were analyzed to figure out if there is any data could be extracted. Figures 6 and 7 shows how the distribution of greyscale values within the batch 1. 
+### Chemical Analysis of Cement Hydration Products
 
-### Chemical Analysis
-
-As previously mentioned, greyscale SEM images are required to be considered for chemical analysis. The following thresholds intervals are defined for each image to characterize different phases:
+As previously mentioned, greyscale SEM images are required to be considered for chemical analysis [4]. The following thresholds intervals are defined for each image to characterize different phases:
 
 * Capillary Pores: 0 < threshold < 1
-* Magnesium/ Sulphur: 1 < threshold < 70
+* Magnesium/ Sulphur: 10 < threshold < 70
 * Calcium Silicate Hydrates (C-S-H): 70 < threshold < 140
-* Calcium Hydroxide (C-H): 140 < threshold < 180
-* Unknown (Anhydrous/ Aluminum): 180 < threshold < 255
+* Calcium Hydroxide/ Portlandite (C-H): 140 < threshold < 180
+* Unknown (Anhydrous/ Aluminate): 180 < threshold < 255
 
-To determine the robustness of image-based chemical analysis, a random image from batch1 is selected and characterized in Fig 10.
+To determine the robustness of chemical analysis using the present image-based analysis, a random image from batch1 is selected and characterized in Fig 10.
 
 <img src ="images/fig13.JPG" width =1100> 
 
-    Figure 10: chemical analysis of greyscale SEM images
+    Figure 10: Chemical analysis of greyscale SEM images
     
 ### Angularity of Capillary Pores
 
@@ -115,6 +113,8 @@ The ANN model structure consists of layers having different complexities, which 
     Figure 15: creating ANN model
 
 ### this part to be completed by Faisal
+
+As a result, all 200 SEM images from bach 1 and 2 were analyzed to determine if there is any data could be extracted. Figures 6 and 7 shows how the distribution of greyscale values within the batch 1. 
 
 ![Histogram of greyscale distribution for batch 1](/histogram_batch1.PNG)
 ![distribution of greyscale value in batch 1](/dis_batch1.PNG)
