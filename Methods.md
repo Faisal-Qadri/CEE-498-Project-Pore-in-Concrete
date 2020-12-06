@@ -120,11 +120,11 @@ Due to having a very limited number of images, we had to divide porosity into ca
 
 Image augmentation is pretty important in image processing. As we deal with pixels values and shapes, we focused on image flipping and sizing augmentation rather than color augmentation since we deal with grayscale images and pixels values.
 
-Regarding the model, it was not different from what was given in the class. Manipulation of hyperparameters was critical in order to achieve a satisfactory accuracy. Fig 13 shows the model and Fig 14 shows the used hyperparameters in the CNN model. The used epochs is 80, and learning rate is 5.0 e-5.
+Regarding the model, it was not different from what was given in the class. Manipulation of hyperparameters was critical in order to achieve a satisfactory accuracy. Fig 16 shows the model and Fig 17 shows the used hyperparameters in the CNN model. The used epochs is 80, and learning rate is 5.0 e-5.
 
 ![model](/model.PNG)
 
-    Figure 13: the CNN model algorithm 
+    Figure 16: the CNN model algorithm 
 ![distribution of greyscale value in batch 1](/hyperparameters.PNG)
     
-    Figure 14: hyperparameters for CNN model
+    Figure 17: hyperparameters for CNN model
