@@ -94,7 +94,11 @@ Accordingly, it is required to calculate area and perimeter of capillary pores i
 
     Figure 12: estimating parameters of angularity 
 
+### Application of Artificial Neural Network (ANN) for estimating porosity
 
+The ANN models shown below explain how cement chemistry (model I) and a combined impact of cement chemistry and pore shape (model II) could be used to estimate porosities, i.e. output, of batch 3.
+
+<img src ="images/fig27.JPG" width =900> 
 
 ### this part to be completed by Faisal
 
