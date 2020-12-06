@@ -1,36 +1,36 @@
 # Methods:
 
-## Exploratory Data Analysis
+## Exploratory Data Analysis (EDA)
 
-Exploratory data analysis (EDA) is an important step conducted on any data analysis project for identification, characterization, and quantifiaction of different features. In this project, our input data consists of two columns, images (IDs) and their corresponding porosity, which were determined by ImageJ commercial software. Figure 1 shows porosities of five random images for each batch, with porosities variable from 0 to 100 percent.
+In the present project, EDA plays an intergal role project for identification, characterization, or quantifiaction of different features. The input data used consists of two columns: images (IDs), and their correspondent porosity exprted by ImageJ commercial software. Fig 1 shows porosities of five random images for each batch, ranging from 0 to 100 percent.
 
 <img src ="images/fig1.JPG" width =500>
 
-    Figure 1: importing tabular data for EDA
+    Figure 1: Importing tabular data for EDA
 
-It is worth noting that each Batch 1 and 2 has 100 images, which will be used for porosity characterization. In the next step, images are read to facilitate understanding of the general characterestics of pore system. The first three images chosen from batch1 are shown in Fig 2:
+It is worth noting that each Batch 1 and 2 has 100 images, which will be used for porosity characterization. The first three images chosen from batch1 are shown in Fig 2:
                
 <img src ="images/fig2.JPG" width =700>
 
-    Figure 2: importing first three images from batch1
+    Figure 2: Importing first three random images from batch1
 
-As shown in Fig 2, images were shown in Viridis color system. However, there are two problems associate with the Viridis color system used for reading images. Firstly, there is a significant variation of color for thresholds ranging from 0 to 10, hence porosity quantification may subject to instability. Secondly, identifiaction and quantification of cement hydration products has been done in Greyscale color system [1]. Consequently, it is required to convert Viridis to Greyscale color system to enahnce accuracy of EDA. Fig 3 provides a comparison of these two different color systems
+As shown in Fig 2, images were shown in Viridis color system. However, there are two problems associate with the Viridis color system used for reading images. Firstly, there is a significant variation of colors for low thresholds, i.e. ranging from 0 to 10, hence porosity quantification may subject to instability. Secondly, identifiaction and quantification of cement hydration products has been done in Greyscale color system [4]. Consequently, it is required to convert Viridis to Greyscale color system to enahnce accuracy of EDA. Fig 3 provides a comparison of these two different color systems.
 
 <img src ="images/fig3.JPG" width =700>
 
-    Figure 3: comparison of Viridis vs. Greyscale color systems for reading images in python 
+    Figure 3: Comparison of Viridis vs. Greyscale color systems for reading images in python 
 
-As previously mentioned, the color system of images had to be converted to Greyscale to faciliate chemical analysis of hydartes, and to ease  identification, as well as quantification of porosity in cement paste matrix. In Fig 4, it is shown that pixels having darker luminance belong to capillary pores, intermediate thresholds belong to hydrated products, while higher thresholds belongs to cement hydarted products. 
+As previously mentioned, the color system of images had to be converted to Greyscale to improve stability chemical analysis of hydartes, as well as to ease identification, as and quantification of porosity in cement paste matrix. As shown in Fig 4, pixels having darker luminance may belong to capillary pores, intermediate thresholds represent hydrated products, and higher thresholds belongs to unknown phases, including anhydrous or aluminate [4]. 
 
 <img src ="images/fig4.png" width =500>
 
-    Figure 4: identifiaction and quantification of different phases using greyscale SEM images
+    Figure 4: Identifiaction and quantification of different phases using greyscale SEM images[4]
     
-As a result, Fig 5 shows a converted version of Fig 1 transformed from Viridis to Greyscale, which will be used for EDA.  
+As a result, Fig 5 shows a converted version of Fig 1 from Viridis to Greyscale systems, used for EDA.  
 
 <img src ="images/fig5.JPG" width =700>   
 
-    Figure 5: transformation of input images from Viridis to Greyscale 
+    Figure 5: Transformation images from Viridis to Greyscale 
     
 ### Model Caliberation
     
