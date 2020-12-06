@@ -14,9 +14,7 @@ Tianshu Xiao, MS Student, Construction Management, University of Illinois
 
 ## [Methods](Methods.md)
 
-## [Results](Results.md)
-
-## [Discussion](Discussion.md)
+## [Results and Discussion](Results_and_Discussion.md)
 
 ## [Conclusion](Conclusions.md)
 
