@@ -118,6 +118,7 @@ Images from both batches 1 and 2 were merged into one batch to ease working on a
     Figure 30: a snapshot showing the categorized images from both batches 1 and 2
 
 CNN model was build using the 200 imges from the training dataset and applied to predict the porosity 100 images in the testing dataset. Fig 31 shows the acuuracy values for both training and testing datasets. Also Fig 32 shows the loss values for both batches training and testing datasets.
+
 ![training and testing loss](/loss.PNG)
 
     Figure 31: accuracy valeus for both training and testing datasets
