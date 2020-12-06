@@ -98,7 +98,7 @@ Accordingly, it is required to calculate area and perimeter of capillary pores i
 
 The ANN models shown below explain how cement chemistry (model I) and a combined impact of cement chemistry and pore shape (model II) could be used to estimate porosities, i.e. output, of batch 3.
 
-<img src ="images/fig27.JPG" width =900> 
+<img src ="images/fig27.jpg" width =900> 
 
 ### this part to be completed by Faisal
 
