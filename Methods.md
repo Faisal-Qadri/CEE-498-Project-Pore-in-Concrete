@@ -122,9 +122,9 @@ Image augmentation is pretty important in image processing. As we deal with pixe
 
 Regarding the model, it was not different from what was given in the class. Manipulation of hyperparameters was critical in order to achieve a satisfactory accuracy. Fig 16 shows the model and Fig 17 shows the used hyperparameters in the CNN model. The used epochs is 80, and learning rate is 5.0 e-5.
 
-![model](/model.PNG)
+<img src ="images/model.png" width =800> 
 
     Figure 16: the CNN model algorithm 
-![distribution of greyscale value in batch 1](/hyperparameters.PNG)
+<img src ="images/hyperparameters.png" width =800> 
     
     Figure 17: hyperparameters for CNN model
