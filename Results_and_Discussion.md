@@ -110,9 +110,11 @@ ANN also facilitates statistical matching estimated versus true porosities of tr
 
     Figure 32: matching porosities for training and testing datasets, second model
 
-Model II is also capable of relating physical as well as chemical properties of cement to its porosity, but with lower accuracy compared with Model I. The reduction in results accuracy could be attributed to the formula introduced in this paper for calculation of angularity. Nonetheless, to the authors knowledge, for the first time in the literature, angularity of pores was found to be correlated with porosity. This phenomenon shall be further explored in the future research.    
+Model II is also capable of relating physical as well as chemical properties of cement to its porosity, but with lower accuracy compared with Model I. The reduction in results accuracy could be attributed to the formula introduced in this paper for calculation of angularity. Nonetheless, to the authors knowledge, for the first time in the literature, angularity of pores was found to be correlated with porosity. This phenomenon shall be further explored in the future research.   
+
 ### Appllication of CNN for classifying porosity using SEM images (Model III)
-Images from both batches 1 and 2 were merged into one batch to ease working on all images. Fig 33 shows example of the categorized images.
+
+Images from both batches 1 and 2 were merged into a single batch to ease working on all images. Fig 33 shows example of the categorized images. In fact, images are classified  into four different categories 0% to 10% porotity is class one, 10% to 20% is class two, 20% to 30% is class three 30% to 100% is class four
 
 <img src ="images/categorized_images.png" width =300>
 
@@ -128,10 +130,4 @@ CNN model was build using the 200 imges from the training dataset and applied to
 
     Figure 35: loss valeus for both training and testing datasets
 
-We see that both tha accuracy and loss valeus for both the training and testing datasets are approching to each other. This confirms the validety of the model. However, the accuracy values are not very high, this is expected due to having a very limited number of images.
-
-
-
-
-
-
+It could be seen that both the accuracy and loss values for training and testing datasets are approching to each other. This confirms the validity of the model. However, the accuracy values are not very high, this is expected due to having a very limited number of images.
