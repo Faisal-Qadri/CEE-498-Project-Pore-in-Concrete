@@ -120,11 +120,11 @@ Images from both batches 1 and 2 were merged into one batch to ease working on a
 
 CNN model was build using the 200 imges from the training dataset and applied to predict the porosity 100 images in the testing dataset. Fig 34 shows the acuuracy values for both training and testing datasets. Also Fig 35 shows the loss values for both batches training and testing datasets.
 
-<img src ="images/losss.png" width 4900>
+<img src ="images/loss.png" width = 400>
 
     Figure 34: accuracy valeus for both training and testing datasets
     
-<img src ="images/accuracy.png" width =400>
+<img src ="images/accuracy.png" width = 400>
 
     Figure 35: loss valeus for both training and testing datasets
 
