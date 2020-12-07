@@ -114,16 +114,17 @@ Model II is also capable of relating physical as well as chemical properties of 
 ### Appllication of CNN for classifying porosity using SEM images (Model III)
 Images from both batches 1 and 2 were merged into one batch to ease working on all images. Fig 33 shows example of the categorized images.
 
-![merged imaegs and categorized](categorized_images.PNG)
+<img src ="images/categorized_images.png" width =200>
 
     Figure 33: a snapshot showing the categorized images from both batches 1 and 2
 
 CNN model was build using the 200 imges from the training dataset and applied to predict the porosity 100 images in the testing dataset. Fig 34 shows the acuuracy values for both training and testing datasets. Also Fig 35 shows the loss values for both batches training and testing datasets.
 
-![training and testing loss](/loss.PNG)
+<img src ="images/losss.png" width 4900>
 
     Figure 34: accuracy valeus for both training and testing datasets
-![training and testing accuracy](/accuracy.PNG)
+    
+<img src ="images/accuracy.png" width =400>
 
     Figure 35: loss valeus for both training and testing datasets
 
