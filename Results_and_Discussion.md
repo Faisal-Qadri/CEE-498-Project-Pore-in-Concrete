@@ -9,15 +9,13 @@ The images from baches 1 and 2 were analyzed to recognize if there is any data c
 
 18 shows how the distribution of greyscale values within the batch 1. 
 
-![Histogram of greyscale distribution for batch 1](/histogram_batch1.PNG)
-![distribution of greyscale value in batch 1](/dis_batch1.PNG)
+<img src ="images/histogram_batch1_combined.png" width =1100> 
 
     Figure 18: left) histogram showing the grayscale value distribution of images in batch 1; right) the distribution of grayscale value of images in batch 1
 
 Also, fig 19 shows how the distribution of greyscale values within the batch 2.
 
-![Histogram of greyscale distribution for batch 2](/histogram_batch2.PNG)
-![distribution of greyscale value in batch 1](/dis_batch2.PNG)
+<img src ="images/histogram_batch2_combined.png" width =1100> 
     
     Figure 19: left) histogram showing the grayscale value distribution of images in batch 2; right) the distribution of grayscale value of images in batch 2
 
